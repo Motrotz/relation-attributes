@@ -1,0 +1,24 @@
+{
+    "name": "killmails/relation-attributes",
+    "description": "Define Eloquent relationships using Attributes.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Killmails\\RelationAttributes\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "^11.0",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}
