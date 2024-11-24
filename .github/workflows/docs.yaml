@@ -1,9 +1,14 @@
-name: Deploy Docs
+name: Docs
 
 on:
     push:
         branches:
             - main
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
 
 env:
     BUILD_PATH: docs
