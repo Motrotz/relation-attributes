@@ -38,7 +38,7 @@ jobs:
             - name: Build with Astro
               working-directory: ${{ env.BUILD_PATH }}
               run: |
-                  npx astro build
+                  npx astro build \
                   --site "${{ steps.pages.outputs.origin }}" \
                   --base "${{ steps.pages.outputs.base_path }}"
 
