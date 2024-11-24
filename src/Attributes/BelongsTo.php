@@ -1,10 +1,10 @@
 <?php
 
-namespace Killmails\RelationAttributes\Attributes;
+namespace RelationAttributes\Attributes;
 
 use Attribute;
 use Illuminate\Support\Str;
-use Killmails\RelationAttributes\Contracts\RelationAttribute;
+use RelationAttributes\Contracts\RelationAttribute;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
 class BelongsTo implements RelationAttribute
@@ -15,6 +15,8 @@ class BelongsTo implements RelationAttribute
         public ?string $ownerKey = null,
         public ?string $relation = null,
     ) {
-        $this->relation ??= Str::of($this->related)->classBasename()->camel();
+        $this->relation ??= Str::of($this->related)
+            ->classBasename()
+            ->camel();
     }
 }

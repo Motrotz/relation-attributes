@@ -1,0 +1,41 @@
+---
+title: BelongsTo
+description: Define belongs-to relationships using attributes
+---
+
+The `BelongsTo` attribute allows you to define belongs-to relationships on your models:
+
+## Basic Usage
+
+```php
+#[BelongsTo(Team::class)]
+class User extends Model
+{
+    use HasRelationAttributes;
+}
+```
+
+## Custom Configuration
+
+You can customize the foreign key, owner key, and relation name:
+
+```php
+#[BelongsTo(Team::class, 'team_uuid', 'uuid', 'organization')]
+class User extends Model
+{
+    use HasRelationAttributes;
+}
+```
+
+## Multiple Relationships
+
+You can define multiple belongs-to relationships on a single model:
+
+```php
+#[BelongsTo(Team::class)]
+#[BelongsTo(Team::class, 'personal_team_id', 'id', 'personalTeam')]
+class User extends Model
+{
+    use HasRelationAttributes;
+}
+```

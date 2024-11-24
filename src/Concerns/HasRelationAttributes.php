@@ -1,11 +1,11 @@
 <?php
 
-namespace Killmails\RelationAttributes\Concerns;
+namespace RelationAttributes\Concerns;
 
-use Killmails\RelationAttributes\Contracts\RelationAttribute;
-use Killmails\RelationAttributes\RelationResolver;
 use ReflectionAttribute;
 use ReflectionClass;
+use RelationAttributes\Contracts\RelationAttribute;
+use RelationAttributes\RelationResolver;
 
 trait HasRelationAttributes
 {

@@ -1,0 +1,25 @@
+---
+title: Getting Started
+description: Learn how to add Relation Attributes to your Laravel project
+---
+
+## Installation
+
+```bash
+composer require killmails/relation-attributes
+```
+
+## Basic Usage
+
+Define relationships on your models using PHP attributes:
+
+```php
+use RelationAttributes\Attributes as RA;
+use RelationAttributes\Concerns\HasRelationAttributes;
+
+#[RA\BelongsTo(Team::class)]
+class User extends Model
+{
+    use HasRelationAttributes;
+}
+```

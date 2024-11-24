@@ -1,5 +1,5 @@
 <?php
 
-namespace Killmails\RelationAttributes\Contracts;
+namespace RelationAttributes\Contracts;
 
 interface RelationAttribute {}
