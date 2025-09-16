@@ -1,5 +1,5 @@
 {
-    "name": "killmails/relation-attributes",
+    "name": "motrotz/relation-attributes",
     "description": "Define Eloquent relationships using Attributes.",
     "license": "MIT",
     "autoload": {
