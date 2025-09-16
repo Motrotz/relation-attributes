@@ -63,9 +63,9 @@ $user->publishedPosts; // Filtered & sorted HasMany
 | HasOne | ✅ Supported | `#[HasOne(Profile::class)]` |
 | HasMany | ✅ Supported | `#[HasMany(Post::class)]` |
 | BelongsToMany | ✅ Supported | `#[BelongsToMany(Role::class)]` |
-| MorphTo | 🚧 Coming Soon | Polymorphic relationships |
-| MorphOne | 🚧 Coming Soon | Polymorphic relationships |
-| MorphMany | 🚧 Coming Soon | Polymorphic relationships |
+| MorphTo | 🚧 Coming Later | Polymorphic relationships |
+| MorphOne | 🚧 Coming Later | Polymorphic relationships |
+| MorphMany | 🚧 Coming Later | Polymorphic relationships |
 
 ## How It Works
 
