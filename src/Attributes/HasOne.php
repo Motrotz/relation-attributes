@@ -8,14 +8,14 @@ use RelationAttributes\Contracts\RelationAttribute;
 use RelationAttributes\Traits\HasCommonFilters;
 
 #[Attribute(Attribute::TARGET_CLASS | Attribute::IS_REPEATABLE)]
-class BelongsTo implements RelationAttribute
+class HasOne implements RelationAttribute
 {
     use HasCommonFilters;
     public function __construct(
         public string $related,
         public ?string $relation = null,
         public ?string $foreignKey = null,
-        public ?string $ownerKey = null,
+        public ?string $localKey = null,
         // Common filters
         array $where = [],
         array $whereIn = [],
